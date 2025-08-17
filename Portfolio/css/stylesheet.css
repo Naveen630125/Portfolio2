@@ -1,0 +1,410 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f172a; /* Dark background */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #00f0ff; /* Cyan accent */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00f0ff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.text-content h3 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.text-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.text-content h2 span {
+  color: #00f0ff;
+}
+
+.text-content p {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  background: #1e293b;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #00f0ff;
+  color: #000;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #00f0ff;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: #000;
+}
+
+/* Image Section */
+.image-content {
+  position: relative;
+}
+
+.image-border {
+  background: #00f0ff;
+  padding: 8px;
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+  display: inline-block;
+}
+
+.image-border img {
+  display: block;
+  width: 500px;
+  height: auto;
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+}
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 80px;
+  gap: 50px;
+}
+
+.about-image img {
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00f0ff; /* cyan glow */
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-text h2 span {
+  color: #00f0ff;
+}
+
+.about-text h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #00f0ff;
+}
+
+.about-text p {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-info p {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.about-info strong {
+  color: #00f0ff;
+  font-weight: 600;
+}
+
+/* Button reuses .btn styles from hero section */
+/* Skills Section */
+.skills {
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.skills-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.skills-text h2 span {
+  color: #00f0ff;
+}
+
+.skills-text p {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skill h4 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.bar {
+  position: relative;
+  background: #1e293b;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #00f0ff;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #00f0ff;
+}
+/* Portfolio Section */
+.portfolio {
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.portfolio-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.portfolio-text h2 span {
+  color: #00f0ff;
+}
+
+.portfolio-text p {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 240, 255, 0.8);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.overlay .btn {
+  padding: 10px 20px;
+  background: #000;
+  color: #00f0ff;
+  border-radius: 25px;
+  text-decoration: none;    
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.overlay .btn:hover {
+  background: #fff;
+  color: #000;
+}
+/* Contact Section */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 80px;
+  gap: 50px;
+}
+
+.contact-text {
+  max-width: 500px;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-text h2 span {
+  color: #00f0ff;
+}
+
+.contact-text p {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.contact-info i {
+  color: #00f0ff;
+  margin-right: 10px;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+.contact-form button.btn {
+  width: 100%;
+  background: #00f0ff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-form button.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
